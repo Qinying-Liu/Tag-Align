@@ -134,7 +134,7 @@
       Illustration on various tag supervisions (<i>e.g.<i>, object and attribute) for open-vocabulary semantic segmentation. 
       The vanilla CLIP struggles in localizing an attribute-specified object. 
       When introducing object supervision (as depicted in the third column), CLIP can focus on the more accurate region of text-specified object (<i>e.g.<i>, cat). 
-      In addition, adding attribute supervision brings CLIP a stronger understanding of visual attribute-specified concepts.
+      In addition, adding attribute supervision brings CLIP a stronger understanding of visual attribute-specified concepts (<i>e.g.</i>, black cat).
       </h2>
     </div>
   </div>
@@ -151,8 +151,8 @@
         <div class="content has-text-justified">
           <p>
           The crux of learning vision-language models is to extract semantically aligned information from visual and linguistic data. Existing attempts usually face the problem of coarse alignment, <i>e.g.</i>, the vision encoder struggles in localizing an attribute-specified object. In this work, we propose an embarrassingly simple approach to better align image and text features with no need of additional data formats other than image-text pairs. Concretely, given an image and its paired text, we manage to parse objects (
-<i>e.g.</i>, cat) and attributes (<i>e.g.</i>, black) from the description, which are highly likely to exist in the image. It is noteworthy that the parsing pipeline is fully automatic and thus enjoys good scalability. With these parsed semantics as supervision signals, we can complement the commonly used image-text contrastive loss with the multi-tag classification loss. Extensive experimental results on a broad suite of semantic segmentation datasets substantiate the average  improvement of our framework over existing alternatives. Furthermore, the visualization results indicate that attribute supervision makes vision-language models accurately localize attribute-specified objects. Code and parsed tags will be made publicly available.
-        </div>
+<i>e.g.</i>, cat) and attributes (<i>e.g.</i>, black) from the description, which are highly likely to exist in the image. It is noteworthy that the parsing pipeline is fully automatic and thus enjoys good scalability. With these parsed semantics as supervision signals, we can complement the commonly used image-text contrastive loss with the multi-tag classification loss. Extensive experimental results on a broad suite of semantic segmentation datasets substantiate the average  improvement of our framework over existing alternatives. 
+Furthermore, the visualization results indicate that attribute supervision makes vision-language models accurately localize attribute-specified objects. 
       </div>
     </div>
   </div>
